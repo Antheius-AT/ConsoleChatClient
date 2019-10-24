@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientDisconnectedEventArgs.cs" />
+    <Compile Include="DataAvailableEventArgs.cs" />
     <Compile Include="NetworkComponents\ChatClient.cs" />
     <Compile Include="NetworkComponents\ChatClientManager.cs" />
     <Compile Include="PollingThreadArguments.cs" />

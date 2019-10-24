@@ -60,7 +60,7 @@
         /// <summary>
         /// This method starts the listener to accept incoming connections.
         /// </summary>
-        private void StartListening()
+        private void ListenForIncomingConnections()
         {
             throw new System.NotImplementedException();
         }
@@ -68,7 +68,7 @@
         /// <summary>
         /// This method stops the listener to stop accepting incoming connections.
         /// </summary>
-        private void StopListening()
+        private void StopListeningForIncomingConnections()
         {
             throw new System.NotImplementedException();
         }
@@ -77,7 +77,7 @@
         /// This method sends updates to all connected game clients in a fixed time interval.
         /// </summary>
         /// <param name="interval">The time interval that indicates after how much time the server pushes out updates.</param>
-        public void SendUpdates(TimeSpan interval)
+        private void SendUpdates(TimeSpan interval)
         {
             throw new System.NotImplementedException();
         }

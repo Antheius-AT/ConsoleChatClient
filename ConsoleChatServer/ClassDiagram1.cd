@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Hilfsnotiz Ablauf Server:&#xD;&#xA;1 - Verbindung kommt an&#xD;&#xA;2 - Verbindung wird angenommen&#xD;&#xA;3- Verbindung wird gehalten&#xD;&#xA;4- Wenn Daten über die Verbindung einkommt, werden diese Daten auf allen anderen Verbindungen gesendet.&#xD;&#xA;">
+    <Position X="13.271" Y="4.26" Height="1.917" Width="1.7" />
+  </Comment>
   <Class Name="ConsoleChatServer.Program" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -10,7 +13,7 @@
   <Class Name="ConsoleChatServer.Server">
     <Position X="3.75" Y="0.75" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAgQCAAAAAAAEAAAAAAAAAAAAAAIABAEAAIAIA=</HashCode>
+      <HashCode>AAAAIAAgQCAAAAAAAECAAAAAAAAAAAAAIABAEAAIAAA=</HashCode>
       <FileName>NetworkComponents\Server.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -18,16 +21,16 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ConsoleChatServer.ChatClient">
-    <Position X="9" Y="4" Width="2.25" />
+    <Position X="9" Y="3.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAKAAIBBAAQAAAAAAIAAAACAAAAAAAgIAAAA=</HashCode>
       <FileName>NetworkComponents\ChatClient.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatServer.ChatClientManager">
     <Position X="8.75" Y="1" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIABAAAAAAAACAAAAAAAABAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAACAAAAAAA=</HashCode>
       <FileName>NetworkComponents\ChatClientManager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,10 +42,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatServer.PollingThreadArguments">
-    <Position X="13.5" Y="1.25" Width="1.5" />
+    <Position X="6.5" Y="5.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>PollingThreadArguments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleChatServer.DataAvailableEventArgs">
+    <Position X="12.5" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAvailableEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleChatServer.ClientDisconnectedEventArgs">
+    <Position X="13" Y="3" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClientDisconnectedEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

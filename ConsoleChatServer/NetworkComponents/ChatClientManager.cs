@@ -8,7 +8,6 @@ namespace ConsoleChatServer
 {
     public class ChatClientManager
     {
-        private Thread pollingThread;
 
         public ChatClientManager()
         {
@@ -29,11 +28,6 @@ namespace ConsoleChatServer
         }
 
         public void RemoveClient(ChatClient client)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void MaintainClientConnection(ChatClient client)
         {
             throw new System.NotImplementedException();
         }
