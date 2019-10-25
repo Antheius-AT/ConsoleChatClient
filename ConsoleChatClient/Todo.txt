@@ -1,5 +1,4 @@
-﻿
-==TODO==
+﻿==TODO==
 
 	Projektbeschreibung:
 	Dieses Projekt wird als Konsolenapplikation implementiert, und stellt einen Chatclient dar.

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ConsoleChatClient
+namespace ConsoleChatSerializationTools
 {
     /// <summary>
     /// This is the <see cref="IChatCommand"/> interface.

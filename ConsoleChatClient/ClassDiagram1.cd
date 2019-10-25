@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Comment CommentText="Ablauf hilfe für client:&#xD;&#xA;Schritt 1: Benutzer bitten eine IP adresse einzugeben um sich zu verbinden. &#xD;&#xA;Falls gültige IP, Verbindung herstellen&#xD;&#xA;Schritt 2: Ständig auf neue Nachrichten überprüfen, bzw. warten bis der User was eingibt (gleichzeitig)&#xD;&#xA;Schritt 3: Wenn neue Nachricht kommt, diese in das jeweilige Command übersetzen (derzeit nur TextCommand, mehr Commands werden später implementiert.&#xD;&#xA;Schritt 4: Wenn User selbst Nachricht schreibt, diese in einem Command verpacken, und über das Netzwerk senden&#xD;&#xA;Schritt 5: Die empfangene oder gesendete Nachricht im Chatverlauf darstellen.&#xD;&#xA;">
-    <Position X="4.018" Y="6.032" Height="2.083" Width="4.7" />
+    <Position X="11.126" Y="5.949" Height="2.083" Width="4.7" />
+  </Comment>
+  <Comment CommentText="Überlegen welche Menu&#xD;&#xA;Options es gibt. Einfach hier hinzufügen:&#xD;&#xA;1) Start session">
+    <Position X="2.781" Y="7.188" Height="1.562" Width="1.7" />
   </Comment>
   <Class Name="ConsoleChatClient.Program" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
@@ -19,39 +22,39 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ConsoleChatClient.ChatClient">
-    <Position X="0.5" Y="4.25" Width="2.75" />
+    <Position X="0.5" Y="4.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQQAAAAAIAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ChatClient.cs</FileName>
+      <FileName>NetworkComponents\ChatClient.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatClient.MessageRelay">
     <Position X="2.5" Y="0.5" Width="4.25" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAQAAAAAAEAAAAAAAANAAABAAAAAAAAACAAAA=</HashCode>
-      <FileName>MessageRelay.cs</FileName>
+      <FileName>NetworkComponents\MessageRelay.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatClient.MessageReceivedEventArgs">
     <Position X="7" Y="2.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
-      <FileName>MessageReceivedEventArgs.cs</FileName>
+      <FileName>EventArguments\MessageReceivedEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatClient.RelayThreadArguments">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="7" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>RelayThreadArguments.cs</FileName>
+      <FileName>ThreadArguments\RelayThreadArguments.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="ConsoleChatClient.IChatCommand">
-    <Position X="9.75" Y="0.75" Width="3" />
+  <Class Name="ConsoleChatClient.UserInterface">
+    <Position X="4.75" Y="6.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IChatCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI_Components\UserInterface.cs</FileName>
     </TypeIdentifier>
-  </Interface>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

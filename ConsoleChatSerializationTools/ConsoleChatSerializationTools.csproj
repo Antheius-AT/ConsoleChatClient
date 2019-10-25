@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A86CAA62-047B-4C94-A64D-2A9210A4E620}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleChatClient</RootNamespace>
-    <AssemblyName>ConsoleChatClient</AssemblyName>
+    <ProjectGuid>{83EACAFE-42D4-4506-805C-613F6764EE75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleChatSerializationTools</RootNamespace>
+    <AssemblyName>ConsoleChatSerializationTools</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,30 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NetworkComponents\ChatClient.cs" />
-    <Compile Include="EventArguments\MessageReceivedEventArgs.cs" />
-    <Compile Include="NetworkComponents\MessageRelay.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ChatCommandSerializer.cs" />
+    <Compile Include="IChatCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commands\TextCommand.cs" />
-    <Compile Include="ThreadArguments\RelayThreadArguments.cs" />
-    <Compile Include="UI_Components\UserInterface.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Todo.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConsoleChatSerializationTools\ConsoleChatSerializationTools.csproj">
-      <Project>{83eacafe-42d4-4506-805c-613f6764ee75}</Project>
-      <Name>ConsoleChatSerializationTools</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
