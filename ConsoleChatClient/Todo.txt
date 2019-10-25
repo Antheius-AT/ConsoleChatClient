@@ -1,0 +1,60 @@
+﻿
+==TODO==
+
+	Projektbeschreibung:
+	Dieses Projekt wird als Konsolenapplikation implementiert, und stellt einen Chatclient dar.
+	Die Kommunikation basiert auf einer Client-Server Architektur, wovon jeweils der Server als auch der Client als eigenes Projekt in dieser Solution anzulegen sind.
+
+	Im ersten Schritt soll es lediglich möglich sein, Nachrichten von den Clients an den Server zu schicken,
+	welcher die Nachrichten dann an die Clients weiterleitet. Die Clients übernehmen dann die Darstellung der Nachrichten.
+
+	Im zweiten Schritt sollen zusätzliche Features eingebaut werden, die es beispielsweise ermöglichen, die IP-Adresse eines Chatpartners abzufragen,
+	oder die Hintergrundfarbe der Konsole von diesem zu ändern.
+	Es ist im ersten Schritt noch nicht notwendig, diese Funktionalität zu implementieren, jedoch muss die Applikation im ersten Schritt
+	sauber designed werden, sodass eine Erweiterung um diese Funktionalitäten im Nachhinein möglich ist, ohne ganze Klassen umschreiben zu müssen.
+	Im letzten Schritt geht es darum, in der bereits vollständig implementierten Applikation, performance Verbesserungen azustreben.
+
+
+	Schritt 1:
+		TODO (x) bedeutet abgeschlossen:
+			SERVER:
+			(x) Klassendiagramm erstellt
+			(x) Assoziationen/Vererbungen der Klassen fertig gestellt
+			(x) Klassen nach semantischer Funktionalität in Ordner zusammengefasst.
+			(x) Sämtliche Methoden vorhanden (ohne implementierung), sodass diese nur noch befüllt werden müssen
+
+			CLIENT:
+			() Klassendiagramm erstellt
+			() Assoziationen/Vererbungen der Klassen fertig gestellt
+			() Klassen nach semantischer Funktionalität in Ordner zusammengefasst.
+			() Sämtliche Methoden vorhanden (ohne implementierung), sodass diese nur noch befüllt werden müssen
+	
+	Zusätzlich zu Schritt 1:
+			() Es wurden beide Klassendiagramme überprüft und es sind beide der Meinung, dass sie fertig sind, sodass implementiert werden kann.
+
+	Schritt 2:
+		TODO (x) bedeutet abgeschlossen:
+			() Alle Punkte aus Schritt 1 abgeschlossen (Voraussetzung)
+			() Es wurde klar besprochen, wer von uns welchen Part übernimmt, sodass nicht beide am selben File arbeiten.
+			() Die grundlegenden Funktionen sind implementiert, es wurde noch kein Test durchgeführt.
+			() Die grundlegenden Funktionen sind implementiert und wurden getestet. Die Funktionalität der Nachrichtenübermittlung ist gegeben.
+	Schritt 3:
+		TODO (x) bedeutet abgeschlossen:
+			() Alle Punkte aus Schritt 2 abgeschlossen (Voraussetzung)
+			() Es wurde klar besprochen, welche Zusatzfunktionen wir genau einbauen wollen.
+				() *Zusatzfunktion hier einfügen* ist implementiert.
+				() *Zusatzfunktion hier einfügen* ist implementiert.
+				() *Zusatzfunktion hier einfügen* ist implementiert.
+				() *Zusatzfunktion hier einfügen* ist implementiert.
+				() *Zusatzfunktion hier einfügen* ist implementiert.
+			() Es wurde genau definiert, wer für welche Funktion zuständig sein wird.
+			() Funktionen sind teilweise implementiert und wurden getestet.
+			() Funktionen sind komplett implementiert und wurden getestet.
+	Schritt 4:
+		TODO (x) bedeutet abgeschlossen:
+			() Alle Punkte aus Schritt 3 abgeschlossen (Voraussetzung)
+			() Sämtliche geplante Funktionalität ist implementiert (Voraussetzung)
+			() Es wurde besprochen, wo es performancemängel gibt
+			() Es wurde besprochen, wie diese Performancemängel behoben werden können
+			() Es wurde besprochen, wer in welchen Teilen der Applikation für Performance Verbesserungen zu sorgen hat.
+			() Performance Optimierung wurde abgeschlossen.
