@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatClient", "Consol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96E75FE6-26E5-45B7-A401-BB260C668EB4}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Grego\Desktop\Todo.txt = ..\..\..\..\..\Grego\Desktop\Todo.txt
+		C:\Users\Grego\Desktop\Todo.txt = C:\Users\Grego\Desktop\Todo.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatServer", "ConsoleChatServer\ConsoleChatServer.csproj", "{A9A3B48B-CC89-425A-9EE0-7E11BB4D4969}"
