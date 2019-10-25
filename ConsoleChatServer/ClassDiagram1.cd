@@ -45,21 +45,21 @@
     <Position X="6.5" Y="5.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>PollingThreadArguments.cs</FileName>
+      <FileName>ThreadArguments\PollingThreadArguments.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatServer.DataAvailableEventArgs">
     <Position X="12.5" Y="1.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
-      <FileName>DataAvailableEventArgs.cs</FileName>
+      <FileName>EventArgs\DataAvailableEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatServer.ClientDisconnectedEventArgs">
     <Position X="13" Y="3" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClientDisconnectedEventArgs.cs</FileName>
+      <FileName>EventArgs\ClientDisconnectedEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
