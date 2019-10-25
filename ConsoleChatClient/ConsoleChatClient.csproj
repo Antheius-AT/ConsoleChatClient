@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExecutableMenuOption.cs" />
     <Compile Include="NetworkComponents\ChatClient.cs" />
     <Compile Include="EventArguments\MessageReceivedEventArgs.cs" />
     <Compile Include="NetworkComponents\MessageRelay.cs" />

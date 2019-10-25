@@ -50,10 +50,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatClient.UserInterface">
-    <Position X="4.75" Y="6.5" Width="2.25" />
+    <Position X="4.75" Y="6.25" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UI_Components\UserInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleChatClient.ExecutableMenuOption">
+    <Position X="8" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAEAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExecutableMenuOption.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -11,7 +11,28 @@ namespace ConsoleChatClient
     /// </summary>
     public class UserInterface
     {
-        public void PresentMenuOptions()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserInterface"/> class.
+        /// </summary>
+        public UserInterface()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <summary>
+        /// This method presents the options the user can 
+        /// choose from in a clear way.
+        /// </summary>
+        /// <param name="options">The list of options the user can choose from.</param>
+        public void PresentMenuOptions(List<ExecutableMenuOption> options)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <summary>
+        /// This executes the new session menu option.
+        /// </summary>
+        private void ExecuteNewSessionOption()
         {
             throw new System.NotImplementedException();
         }
