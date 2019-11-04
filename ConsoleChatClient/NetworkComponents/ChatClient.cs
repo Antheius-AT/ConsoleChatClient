@@ -7,6 +7,10 @@ using System.Net.Sockets;
 
 namespace ConsoleChatClient
 {
+    /// <summary>
+    /// This class represents a chat client that is able
+    /// to connect to a chat server and send and receive messages.
+    /// </summary>
     public class ChatClient
     {
         /// <summary>

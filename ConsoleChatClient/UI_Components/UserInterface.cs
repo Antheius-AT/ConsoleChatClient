@@ -12,11 +12,23 @@ namespace ConsoleChatClient
     public class UserInterface
     {
         /// <summary>
+        /// This stores a list of possible menu options.
+        /// </summary>
+        private List<ExecutableMenuOption> options;
+        /// <summary>
         /// Initializes a new instance of the <see cref="UserInterface"/> class.
         /// </summary>
-        public UserInterface()
+        public UserInterface(List<ExecutableMenuOption> options)
         {
-            throw new System.NotImplementedException();
+            this.options = options;
+        }
+
+        public MenuNavigator MenuNavigator
+        {
+            get => default;
+            set
+            {
+            }
         }
 
         /// <summary>
@@ -25,14 +37,6 @@ namespace ConsoleChatClient
         /// </summary>
         /// <param name="options">The list of options the user can choose from.</param>
         public void PresentMenuOptions(List<ExecutableMenuOption> options)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        /// <summary>
-        /// This executes the new session menu option.
-        /// </summary>
-        private void ExecuteNewSessionOption()
         {
             throw new System.NotImplementedException();
         }

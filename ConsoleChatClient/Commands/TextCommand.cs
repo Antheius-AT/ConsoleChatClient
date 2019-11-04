@@ -7,6 +7,10 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
+    /// <summary>
+    /// This is the <see cref="TextCommand"/> class.
+    /// It can be sent over the network to be executed by a chat partner.
+    /// </summary>
     public class TextCommand : IChatCommand
     {
         public TextCommand(string text)
