@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationBase.cs" />
-    <Compile Include="Direction.cs" />
     <Compile Include="ExecutableMenuOption.cs" />
-    <Compile Include="KeyToNavigationMapper.cs" />
-    <Compile Include="MenuNavigator.cs" />
+    <Compile Include="IMenuExecutionCommand.cs" />
+    <Compile Include="IMenuNavigationCommand.cs" />
+    <Compile Include="MenuAdministrator.cs" />
+    <Compile Include="MenuNavigationCommandDown.cs" />
+    <Compile Include="MenuNavigationCommandSelect.cs" />
+    <Compile Include="MenuNavigationCommandUp.cs" />
     <Compile Include="NetworkComponents\ChatClient.cs" />
     <Compile Include="EventArguments\MessageReceivedEventArgs.cs" />
     <Compile Include="NetworkComponents\MessageRelay.cs" />

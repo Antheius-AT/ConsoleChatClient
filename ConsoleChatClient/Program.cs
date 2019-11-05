@@ -10,6 +10,8 @@ namespace ConsoleChatClient
     {
         static void Main(string[] args)
         {
+            ApplicationBase app = new ApplicationBase();
+            app.StartApplication();
         }
     }
 }

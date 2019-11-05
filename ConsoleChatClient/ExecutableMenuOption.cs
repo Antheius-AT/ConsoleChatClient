@@ -11,22 +11,35 @@ namespace ConsoleChatClient
     /// </summary>
     public class ExecutableMenuOption
     {
+        private string name;
         private Action execute;
 
-        public ExecutableMenuOption(Action execute)
+        public ExecutableMenuOption(string name, Action execute)
         {
-            throw new System.NotImplementedException();
+            this.Name = name;
+            this.execute = execute;
         }
 
         public string Name
         {
-            get;
-            private set;
+            get
+            {
+                return this.name;
+            }
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "Value can not be null or an empty string");
+                }
+
+                this.name = value;
+            }
         }
 
         public void Execute()
         {
-            throw new System.NotImplementedException();
+            this.execute.Invoke();
         }
     }
 }

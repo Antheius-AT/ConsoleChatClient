@@ -12,23 +12,10 @@ namespace ConsoleChatClient
     public class UserInterface
     {
         /// <summary>
-        /// This stores a list of possible menu options.
-        /// </summary>
-        private List<ExecutableMenuOption> options;
-        /// <summary>
         /// Initializes a new instance of the <see cref="UserInterface"/> class.
         /// </summary>
-        public UserInterface(List<ExecutableMenuOption> options)
+        public UserInterface()
         {
-            this.options = options;
-        }
-
-        public MenuNavigator MenuNavigator
-        {
-            get => default;
-            set
-            {
-            }
         }
 
         /// <summary>
@@ -38,7 +25,31 @@ namespace ConsoleChatClient
         /// <param name="options">The list of options the user can choose from.</param>
         public void PresentMenuOptions(List<ExecutableMenuOption> options)
         {
-            throw new System.NotImplementedException();
+            foreach (ExecutableMenuOption item in options)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+
+        public IMenuNavigationCommand GenerateNavigationCommand()
+        {
+            return MapToNavigationCommand(Console.ReadKey(true).Key);
+        }
+
+        /// <summary>
+        /// This method maps user input to a console independent menu command that can be interpreted by the <see cref="MenuNavigator"/>
+        /// </summary>
+        private IMenuNavigationCommand MapToNavigationCommand(ConsoleKey inputKey)
+        {
+            switch (inputKey)
+            {
+                case ConsoleKey.DownArrow:
+                    return new MenuNavigationCommandDown();
+                case ConsoleKey.UpArrow:
+                    return new MenuNavigationCommandUp();
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(inputKey), "Key could not be mapped to a direction");
+            }
         }
     }
 }
