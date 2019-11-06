@@ -66,7 +66,7 @@
   <Class Name="ConsoleChatClient.ApplicationBase">
     <Position X="4.75" Y="4.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>EAAAAAQAEAAAAAAAAAIAQUAAAAAAAAAAAAAgQAAAAAA=</HashCode>
+      <HashCode>EAAAAAQAEAAAAAQAAAIAQUAAAAAAAAAAAAAgQAAAAAA=</HashCode>
       <FileName>ApplicationBase.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -91,11 +91,11 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ConsoleChatClient.MenuNavigationCommandSelect">
+  <Class Name="ConsoleChatClient.MenuSelectionCommand">
     <Position X="1" Y="12.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MenuNavigationCommandSelect.cs</FileName>
+      <FileName>MenuSelectionCommand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -106,18 +106,11 @@
       <FileName>MenuAdministrator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="ConsoleChatClient.IMenuNavigationCommand">
-    <Position X="10.5" Y="2" Width="3.25" />
+  <Interface Name="ConsoleChatClient.IMenuCommand">
+    <Position X="13.25" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IMenuNavigationCommand.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="ConsoleChatClient.IMenuExecutionCommand">
-    <Position X="14.25" Y="2" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IMenuExecutionCommand.cs</FileName>
+      <FileName>IMenuCommand.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

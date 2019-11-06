@@ -45,11 +45,10 @@
   <ItemGroup>
     <Compile Include="ApplicationBase.cs" />
     <Compile Include="ExecutableMenuOption.cs" />
-    <Compile Include="IMenuExecutionCommand.cs" />
-    <Compile Include="IMenuNavigationCommand.cs" />
+    <Compile Include="IMenuCommand.cs" />
     <Compile Include="MenuAdministrator.cs" />
     <Compile Include="MenuNavigationCommandDown.cs" />
-    <Compile Include="MenuNavigationCommandSelect.cs" />
+    <Compile Include="MenuSelectionCommand.cs" />
     <Compile Include="MenuNavigationCommandUp.cs" />
     <Compile Include="NetworkComponents\ChatClient.cs" />
     <Compile Include="EventArguments\MessageReceivedEventArgs.cs" />

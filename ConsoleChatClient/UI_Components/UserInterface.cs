@@ -31,7 +31,7 @@ namespace ConsoleChatClient
             }
         }
 
-        public IMenuNavigationCommand GenerateNavigationCommand()
+        public IMenuCommand GenerateNavigationCommand()
         {
             return MapToNavigationCommand(Console.ReadKey(true).Key);
         }
@@ -39,7 +39,7 @@ namespace ConsoleChatClient
         /// <summary>
         /// This method maps user input to a console independent menu command that can be interpreted by the <see cref="MenuNavigator"/>
         /// </summary>
-        private IMenuNavigationCommand MapToNavigationCommand(ConsoleKey inputKey)
+        private IMenuCommand MapToNavigationCommand(ConsoleKey inputKey)
         {
             switch (inputKey)
             {

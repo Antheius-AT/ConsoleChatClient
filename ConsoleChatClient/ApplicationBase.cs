@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public class ApplicationBase
+    public class ApplicationBase : IMenuVisitor
     {
         public ApplicationBase()
         {
-           // this.ChatClient = new ChatClient();
+            // this.ChatClient = new ChatClient();
             this.UserInterface = new UserInterface();
             this.MenuAdministrator = new MenuAdministrator(this.PopulateMenuOptions());
         }
@@ -34,7 +34,7 @@ namespace ConsoleChatClient
 
         public void StartApplication()
         {
-            IMenuNavigationCommand navigationCommand;
+            IMenuCommand navigationCommand;
 
             while (true)
             {
@@ -59,8 +59,9 @@ namespace ConsoleChatClient
             throw new System.NotImplementedException();
         }
 
-        private void ExecuteNavigationCommand(IMenuNavigationCommand command)
+        private void ExecuteNavigationCommand(IMenuCommand command)
         {
+            command.Accept(this);
             command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
         }
 
@@ -71,6 +72,21 @@ namespace ConsoleChatClient
                 new ExecutableMenuOption("Start session", this.StartSessionCommand),
                 new ExecutableMenuOption("Connect to session", this.ConnectSessionCommand)
             };
+        }
+
+        public void Visit(MenuNavigationCommandDown command)
+        {
+            command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
+        }
+
+        public void Visit(MenuNavigationCommandUp command)
+        {
+            command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
+        }
+
+        public void Visit(MenuSelectionCommand command)
+        {
+            throw new NotImplementedException();
         }
     }
 }

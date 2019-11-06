@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public interface IMenuNavigationCommand
+    public interface IMenuCommand : IMenuVisitable
     {
-        int Execute(int currentIndex, int maximumIndex);
+        void Execute(params object[] parameters);
     }
 }

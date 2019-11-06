@@ -5,9 +5,9 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public class MenuNavigationCommandSelect : IMenuExecutionCommand
+    public class MenuSelectionCommand : IMenuCommand
     {
-        public void Execute()
+        public void Execute(params object[] parameters)
         {
             throw new NotImplementedException();
         }

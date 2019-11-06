@@ -5,20 +5,11 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public class MenuNavigationCommandUp : IMenuNavigationCommand
+    public class MenuNavigationCommandUp : IMenuCommand
     {
-        public int Execute(int currentIndex, int maximumIndex)
+        public void Execute(params object[] parameters)
         {
-            if (currentIndex == 0)
-            {
-                currentIndex = maximumIndex;
-            }
-            else
-            {
-                currentIndex--;
-            }
-
-            return currentIndex;
+            throw new NotImplementedException();
         }
     }
 }
