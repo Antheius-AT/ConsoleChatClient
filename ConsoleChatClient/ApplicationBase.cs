@@ -46,7 +46,7 @@ namespace ConsoleChatClient
 
         private void StartSessionCommand()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         private void ConnectSessionCommand()
