@@ -7,9 +7,16 @@ namespace ConsoleChatClient
 {
     public class MenuNavigationCommandUp : IMenuCommand
     {
-        public void Execute(params object[] parameters)
+        public void Execute(MenuAdministrator administrator)
         {
-            throw new NotImplementedException();
+            if (administrator.ActiveIndex - 1 < 0)
+            {
+                administrator.ActiveIndex = administrator.Menu.Entries.Count - 1;
+            }
+            else
+            {
+                administrator.ActiveIndex--;
+            }
         }
     }
 }

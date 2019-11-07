@@ -23,11 +23,24 @@ namespace ConsoleChatClient
         /// choose from in a clear way.
         /// </summary>
         /// <param name="options">The list of options the user can choose from.</param>
-        public void PresentMenuOptions(List<ExecutableMenuOption> options)
+        public void PresentMenuOptions(MenuAdministrator administrator)
         {
-            foreach (ExecutableMenuOption item in options)
+            for (int i = 0; i < administrator.Menu.Entries.Count; i++)
             {
-                Console.WriteLine(item.Name);
+                if (i == administrator.ActiveIndex)
+                {
+                    Console.SetCursorPosition(0, i);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(administrator.Menu.Entries[i].Name);
+                    Console.ResetColor();
+                    continue;
+                }
+                if (i == administrator.PreviousIndex)
+                {
+                    Console.SetCursorPosition(0, i);
+                    Console.WriteLine(administrator.Menu.Entries[i].Name);
+                    continue;
+                }
             }
         }
 
@@ -47,6 +60,8 @@ namespace ConsoleChatClient
                     return new MenuNavigationCommandDown();
                 case ConsoleKey.UpArrow:
                     return new MenuNavigationCommandUp();
+                case ConsoleKey.Enter:
+                    return new MenuSelectionCommand();
                 default:
                     throw new ArgumentOutOfRangeException(nameof(inputKey), "Key could not be mapped to a direction");
             }

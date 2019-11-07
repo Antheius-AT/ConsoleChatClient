@@ -7,9 +7,9 @@ namespace ConsoleChatClient
 {
     public class MenuSelectionCommand : IMenuCommand
     {
-        public void Execute(params object[] parameters)
+        public void Execute(MenuAdministrator administrator)
         {
-            throw new NotImplementedException();
+            administrator.Menu.Entries[administrator.ActiveIndex].Execute();
         }
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="ApplicationBase.cs" />
     <Compile Include="ExecutableMenuOption.cs" />
     <Compile Include="IMenuCommand.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="MenuAdministrator.cs" />
     <Compile Include="MenuNavigationCommandDown.cs" />
     <Compile Include="MenuSelectionCommand.cs" />

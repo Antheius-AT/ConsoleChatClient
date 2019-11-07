@@ -10,8 +10,11 @@ namespace ConsoleChatClient
     {
         static void Main(string[] args)
         {
+            Console.CursorVisible = false;
             ApplicationBase app = new ApplicationBase();
             app.StartApplication();
+
+            Console.CursorVisible = true;
         }
     }
 }

@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public interface IMenuCommand : IMenuVisitable
+    public interface IMenuCommand
     {
-        void Execute(params object[] parameters);
+        void Execute(MenuAdministrator menu);
     }
 }

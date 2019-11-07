@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleChatClient
 {
-    public class ApplicationBase : IMenuVisitor
+    public class ApplicationBase
     {
         public ApplicationBase()
         {
@@ -36,17 +36,12 @@ namespace ConsoleChatClient
         {
             IMenuCommand navigationCommand;
 
-            while (true)
+            while (true) // Diese Bedingung gehört selbstverständlich noch verfeinert, ist nur zum testen.
             {
-                this.UserInterface.PresentMenuOptions(this.MenuAdministrator.MenuOptions);
+                this.UserInterface.PresentMenuOptions(this.MenuAdministrator);
                 navigationCommand = this.UserInterface.GenerateNavigationCommand();
-                this.ExecuteNavigationCommand(navigationCommand);
+                navigationCommand.Execute(this.MenuAdministrator);
             }
-        }
-
-        private List<ExecutableMenuOption> ParameterizeMenuOptions()
-        {
-            throw new System.NotImplementedException();
         }
 
         private void StartSessionCommand()
@@ -59,12 +54,6 @@ namespace ConsoleChatClient
             throw new System.NotImplementedException();
         }
 
-        private void ExecuteNavigationCommand(IMenuCommand command)
-        {
-            command.Accept(this);
-            command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
-        }
-
         private List<ExecutableMenuOption> PopulateMenuOptions()
         {
             return new List<ExecutableMenuOption>()
@@ -72,21 +61,6 @@ namespace ConsoleChatClient
                 new ExecutableMenuOption("Start session", this.StartSessionCommand),
                 new ExecutableMenuOption("Connect to session", this.ConnectSessionCommand)
             };
-        }
-
-        public void Visit(MenuNavigationCommandDown command)
-        {
-            command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
-        }
-
-        public void Visit(MenuNavigationCommandUp command)
-        {
-            command.Execute(this.MenuAdministrator.ActiveIndex, this.MenuAdministrator.MenuOptions.Count - 1);
-        }
-
-        public void Visit(MenuSelectionCommand command)
-        {
-            throw new NotImplementedException();
         }
     }
 }
