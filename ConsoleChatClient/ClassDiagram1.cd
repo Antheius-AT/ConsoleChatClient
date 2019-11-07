@@ -64,7 +64,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConsoleChatClient.ApplicationBase">
-    <Position X="4.75" Y="4.25" Width="2" />
+    <Position X="5" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>EAAAAAQAEAAAAAAAAAAAQUAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>ApplicationBase.cs</FileName>
